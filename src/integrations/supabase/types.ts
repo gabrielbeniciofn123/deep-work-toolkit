@@ -14,7 +14,90 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          created_at: string | null
+          id: string
+          name: string | null
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          name?: string | null
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          name?: string | null
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      study_sessions: {
+        Row: {
+          completed_at: string | null
+          day_of_week: number
+          duration_minutes: number
+          id: string
+          mode: string
+          task_name: string | null
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string | null
+          day_of_week: number
+          duration_minutes: number
+          id?: string
+          mode: string
+          task_name?: string | null
+          user_id: string
+        }
+        Update: {
+          completed_at?: string | null
+          day_of_week?: number
+          duration_minutes?: number
+          id?: string
+          mode?: string
+          task_name?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      weekly_goals: {
+        Row: {
+          created_at: string | null
+          day_of_week: number
+          id: string
+          subject: string | null
+          target_pomodoros: number
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          day_of_week: number
+          id?: string
+          subject?: string | null
+          target_pomodoros?: number
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          day_of_week?: number
+          id?: string
+          subject?: string | null
+          target_pomodoros?: number
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
