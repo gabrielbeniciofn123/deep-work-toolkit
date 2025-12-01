@@ -138,7 +138,7 @@ const Index = () => {
               <Clock className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="font-semibold text-lg text-foreground">
-              Pomodoro
+              PomôdoBeni
             </span>
           </div>
 
@@ -254,7 +254,7 @@ const Index = () => {
       {/* ============== FOOTER ============== */}
       <footer className="w-full px-6 py-4 text-center">
         <p className="text-xs text-muted-foreground">
-          Técnica Pomodoro — Foque por 25 minutos, descanse por 5
+          PomôdoBeni — Foque por 25 minutos, descanse por 5
         </p>
       </footer>
     </main>
